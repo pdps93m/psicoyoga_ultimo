@@ -1,0 +1,28 @@
+/* Variables */
+@import 'variables';
+
+/* Funciones */
+@import 'funciones';
+
+/* Layouts */
+@import 'layouts';
+
+/* Components */
+@import 'componentes';
+
+/* Navigation Bar */
+@import 'navBar';
+
+/* Home */
+@import 'home';
+
+/* Media Queries */
+@import 'mediaquerys';
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
