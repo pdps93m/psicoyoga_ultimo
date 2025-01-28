@@ -4,86 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horarios y Aranceles</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Asegúrate de que la ruta al archivo CSS sea correcta -->
 </head>
 
 <body>
-
-    <header id="header_principal">
-        <h1 id="titulos">Horarios y aranceles</h1>
+    <header>
+        <h1>Contacto</h1>
         <img id="imagen_logo" src="../assets/imagen_yoga.jpg" alt="Imagen del logo">
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./quienes_somos.html">Quiénes somos</a></li>
+            <li><a href="./actividades.html">Actividades</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./horarios_aranceles.html">Horarios y Aranceles</a></li>
+            <li><a href="./retiros.html">Retiros</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section id="section_nav">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./quienes_somos.html">Quienes somos</a></li>
-                    <li><a href="./actividades.html">Actividades</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./horarios_aranceles.html">Horarios y Aranceles</a></li>
-                    <li><a href="./retiros.html">Retiros</a></li>
-                </ul>
-            </nav>
-        </section>
-
-        <section id="tabla_horarios">
-            <table>
-                <tr>
-                    <th>Lunes</th>
-                    <th>Martes</th>
-                    <th>Miércoles</th>
-                    <th>Jueves</th>
-                    <th>Viernes</th>
-                </tr>
-                <tr>
-                    <td>Nico</td>
-                    <td>Buenos Aires</td>
-                    <td>34</td>
-                    <td>34</td>
-                    <td>34</td>
-                </tr>
-            </table>
-        </section>
-
-        <section id="aranceles">
-            <h3>Aranceles</h3>
-            <table>
-                <tr>
-                    <th>Clases por semana</th>
-                    <th>Una/semana</th>
-                    <th>Dos/semana</th>
-                    <th>Tres/semana</th>
-                    <th>Cuatro/semana</th>
-                    <th>Cinco/semana</th>
-                    <th>Pase Libre</th>
-                </tr>
-                <tr>
-                    <td>$300 (Clase suelta)</td>
-                    <td>$1500</td>
-                    <td>$2000</td>
-                    <td>$3000</td>
-                    <td>$3500</td>
-                    <td>$4000</td>
-                    <td>$3250</td>
-                </tr>
-            </table>
-            <p>Se debe abonar antes del día 10 de cada mes</p>
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
-    <footer id="footer">
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img id="logo_footer" src="../assets/imagen_yoga.jpg" alt="Logo de tu academia">
+                    <img src="tu-logo.png" alt="Logo de la academia">
                     <p>Descripción breve de la academia.</p>
                 </div>
                 <div class="col-md-4">
                     <h3>Contáctanos</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Juan Paullier 2294, esq Coquimbo</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Juan Paullier 2294</p>
                     <p><i class="fas fa-phone-alt"></i> +598 99 453 326</p>
                     <p><i class="fas fa-envelope"></i> psicoyogaacademia@gmail.com</p>
                 </div>
@@ -101,7 +70,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

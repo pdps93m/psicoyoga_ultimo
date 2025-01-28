@@ -1,0 +1,17 @@
+@use '../variables';
+
+footer {
+    background-color: variables.$primary-color;
+    color: variables.$text-color;
+    text-align: center;
+    padding: 20px;
+
+    a {
+        color: variables.$text-color;
+        margin: 0 10px;
+
+        &:hover {
+            color: variables.$secondary-color;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@use '../variables';
+@use '../mixins';
+@use '../funciones';
+
+//Componentes
+@use '../componentes/componentes';
+@use '../componentes/navBar';
+@use '../componentes/footer.scss';
+@use '../componentes/header.scss';
+
+//Layouts
+@use '../layout/home';
+@use '../layout/contacto';
+@use '../layout/layout';
+
+//Media Queries
+@use '../mq/mq.scss';

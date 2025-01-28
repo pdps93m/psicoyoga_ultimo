@@ -1,25 +1,14 @@
-@use 'variables';
-@use 'mixins';
-@use 'funciones';
-
-// Layouts
-@use './layout/home';
-@use './layout/contacto';
-@use './layout/layout';
-
-// Componentes
-@use './componentes/componentes';
-@use './componentes/navBar';
-@use './componentes/footer.scss';
-@use './componentes/header.scss';
-
-//Páginas
-@use './pages/index.scss';
-@use './pages/actividades.scss';
-@use './pages/quienes_somos.scss';
-
-// Media Queries
-@use './mq/mq.scss';
+@use '../variables';
+@use '../mixins';
+@use '../funciones';
+@use '../componentes/componentes';
+@use '../componentes/navBar';
+@use '../componentes/footer.scss';
+@use '../componentes/header.scss';
+@use '../layout/home';
+@use '../layout/contacto';
+@use '../layout/layout';
+@use '../mq/mq';
 
 
 body {
@@ -49,7 +38,6 @@ header {
 
     h1 {
         margin: 0;
-        
         margin-bottom: 20px; // Espacio entre el h1 y el nav
     }
 
@@ -72,7 +60,6 @@ header {
                     border-radius: 5px;
                     background-color: none;
                     transition: background-color 0.3s, color 0.3s;
-                    
 
                     &:hover {
                         background-color: variables.$tertiary-color;
@@ -141,26 +128,27 @@ footer {
     }
 }
 
-section{
+section {
     color: #f8f9fa;
     background-color: variables.$primary-color;
-    a{
-        background-color: variables.$primary-color;
-        
-    }
-    div{
-        h2{
-            ol{
-                background-color: variables.$primary-color;
-                li{
-                background-color: variables.$primary-color;
-                a{
 
-                
+    a {
+        background-color: variables.$primary-color;
+    }
+
+    div {
+        h2 {
+            ol {
                 background-color: variables.$primary-color;
+
+                li {
+                    background-color: variables.$primary-color;
+
+                    a {
+                        background-color: variables.$primary-color;
+                    }
+                }
             }
         }
     }
-}   
 }
-} 

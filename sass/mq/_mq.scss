@@ -1,0 +1,179 @@
+@use '../variables';
+/* Estilos para pantallas pequeñas */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media (max-width: 768px) {
+    
+  }
+
+  /* Estilos para pantallas grandes */
+  @media (max-width: 1024px) {
+    
+  }
+  
+  /* Estilos para pantallas extra grandes */
+  @media (max-width: 1200px) {
+    
+  }
+
+
+  // Media Queries para diseño responsivo
+// Dispositivos pequeños (teléfonos, menos de 768px)
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        nav {
+            ul {
+                flex-direction: column;
+
+                li {
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+
+    section {
+        padding: 10px;
+
+        div {
+            ol {
+                flex-direction: column;
+
+                li {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+// Dispositivos medianos (tabletas, 768px a 991px)
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        img {
+            width: 90px;
+            height: 90px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        nav {
+            ul {
+                flex-direction: row;
+
+                li {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+
+    section {
+        padding: 15px;
+
+        div {
+            ol {
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                li {
+                    width: 48%;
+                    margin: 1%;
+                }
+            }
+        }
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    // Dispositivos grandes (escritorios, 992px y más)
+@media (min-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            ul {
+                flex-direction: row;
+
+                li {
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+    section {
+        padding: 20px;
+
+        div {
+            ol {
+                flex-direction: row;
+
+                li {
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+    section {
+        padding: 20px;
+
+        div {
+            ol {
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                li {
+                    width: 30%;
+                    margin: 1.5%;
+                }
+            }
+        }
+    }
+
+    footer {
+        padding: 20px;
+    }
+}}
