@@ -13,14 +13,13 @@
 @use './componentes/footer.scss';
 @use './componentes/header.scss';
 
-//Páginas
+// Páginas
 @use './pages/index.scss';
 @use './pages/actividades.scss';
 @use './pages/quienes_somos.scss';
 
 // Media Queries
 @use './mq/mq.scss';
-
 
 body {
     background-color: variables.$background-color;
@@ -49,7 +48,6 @@ header {
 
     h1 {
         margin: 0;
-        
         margin-bottom: 20px; // Espacio entre el h1 y el nav
     }
 
@@ -70,9 +68,8 @@ header {
                     color: variables.$background-color;
                     border: 2px solid variables.$secondary-color;
                     border-radius: 5px;
-                    background-color: none;
+                    background-color: variables.$primary-color;
                     transition: background-color 0.3s, color 0.3s;
-                    
 
                     &:hover {
                         background-color: variables.$tertiary-color;
@@ -86,81 +83,116 @@ header {
 
 section {
     padding: 20px;
+    background-color: variables.$primary-color; // Fondo de color primario
 
-    div {
-        ol {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 10px; // Espaciado entre los elementos
+    .contenedornegro {
+        background-color: variables.$primary-color;
+        color: variables.$text-color;
 
-            li {
+        div {
+            h2 {
+                margin-bottom: 20px;
+            }
+
+            ol {
+                list-style: none;
+                padding: 0;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                padding: 10px;
-                border: 1px solid variables.$border-color;
-                border-radius: 5px;
-                background-color: variables.$background-color;
+                gap: 10px; // Espaciado entre los elementos
 
-                a {
-                    text-decoration: none;
-                    color: variables.$secondary-color;
-                    margin-bottom: 10px;
-
-                    &:hover {
-                        color: variables.$tertiary-color;
-                    }
-                }
-
-                img {
-                    max-width: 100%;
-                    height: auto;
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 10px;
                     border: 1px solid variables.$border-color;
                     border-radius: 5px;
+                    background-color: variables.$background-color;
+
+                    a {
+                        text-decoration: none;
+                        color: variables.$secondary-color;
+                        margin-bottom: 10px;
+
+                        &:hover {
+                            color: variables.$tertiary-color;
+                        }
+                    }
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        border: 1px solid variables.$border-color;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .img-special {
+        div {
+            h3 {
+                margin-bottom: 20px;
+            }
+
+            ol {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 10px; // Espaciado entre los elementos
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 10px;
+                    border: 1px solid variables.$border-color;
+                    border-radius: 5px;
+                    background-color: variables.$background-color;
+
+                    a {
+                        text-decoration: none;
+                        color: variables.$secondary-color;
+                        margin-bottom: 10px;
+
+                        &:hover {
+                            color: variables.$tertiary-color;
+                        }
+                    }
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        border: 1px solid variables.$border-color;
+                        border-radius: 5px;
+                    }
                 }
             }
         }
     }
 }
 
-footer {
-    background-color: variables.$primary-color;
-    color: variables.$text-color;
-    text-align: center;
-    padding: 20px;
-
-    a {
-        color: variables.$text-color;
-        margin: 0 10px;
-
-        &:hover {
-            color: variables.$secondary-color;
-        }
-    }
+// Clase especial para las imágenes
+.img-special {
+    width: 200px; // Ajusta el tamaño según sea necesario
+    height: auto;
 }
 
-section{
-    color: #f8f9fa;
-    background-color: variables.$primary-color;
-    a{
-        background-color: variables.$primary-color;
-        
-    }
-    div{
-        h2{
-            ol{
-                background-color: variables.$primary-color;
-                li{
-                background-color: variables.$primary-color;
-                a{
-
-                
-                background-color: variables.$primary-color;
-            }
-        }
-    }
-}   
+// Estilos específicos para cada imagen
+#ashtanga_img {
+    width: 200px;
+    height: auto;
 }
-} 
+
+#vinyasa_img {
+    width: 200px;
+    height: auto;
+}
+
+#yogasilla_img {
+    width: 200px;
+    height: auto;
+}

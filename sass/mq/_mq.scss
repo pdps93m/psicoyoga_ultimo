@@ -1,5 +1,5 @@
-@use '../variables';
 /* Estilos para pantallas pequeñas */
+
 @media (max-width: 480px) {
     .container {
         flex-direction: column;
@@ -177,3 +177,5 @@
         padding: 20px;
     }
 }}
+
+// Media Queries para diseño responsivo

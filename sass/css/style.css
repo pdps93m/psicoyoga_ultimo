@@ -34,16 +34,16 @@ footer a:hover {
   color: #afe4de;
 }
 
-nav ul {
+.navBar nav ul {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
 }
-nav ul li {
+.navBar nav ul li {
   margin: 0 10px;
 }
-nav ul li a {
+.navBar nav ul li a {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
@@ -53,7 +53,7 @@ nav ul li a {
   background-color: none;
   transition: background-color 0.3s, color 0.3s;
 }
-nav ul li a:hover {
+.navBar nav ul li a:hover {
   background-color: turquoise;
   color: #f8f9fa;
 }
@@ -526,7 +526,7 @@ header nav ul li a {
   color: #f8f9fa;
   border: 2px solid #afe4de;
   border-radius: 5px;
-  background-color: none;
+  background-color: lightcoral;
   transition: background-color 0.3s, color 0.3s;
 }
 header nav ul li a:hover {
@@ -536,15 +536,23 @@ header nav ul li a:hover {
 
 section {
   padding: 20px;
+  background-color: lightcoral;
 }
-section div ol {
+section .contenedornegro {
+  background-color: lightcoral;
+  color: #333;
+}
+section .contenedornegro div h2 {
+  margin-bottom: 20px;
+}
+section .contenedornegro div ol {
   list-style: none;
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-section div ol li {
+section .contenedornegro div ol li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -553,50 +561,72 @@ section div ol li {
   border-radius: 5px;
   background-color: #f8f9fa;
 }
-section div ol li a {
+section .contenedornegro div ol li a {
   text-decoration: none;
   color: #afe4de;
   margin-bottom: 10px;
 }
-section div ol li a:hover {
+section .contenedornegro div ol li a:hover {
   color: turquoise;
 }
-section div ol li img {
+section .contenedornegro div ol li img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+section .img-special div h3 {
+  margin-bottom: 20px;
+}
+section .img-special div ol {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+section .img-special div ol li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+section .img-special div ol li a {
+  text-decoration: none;
+  color: #afe4de;
+  margin-bottom: 10px;
+}
+section .img-special div ol li a:hover {
+  color: turquoise;
+}
+section .img-special div ol li img {
   max-width: 100%;
   height: auto;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
 
-footer {
-  background-color: lightcoral;
-  color: #333;
-  text-align: center;
-  padding: 20px;
-}
-footer a {
-  color: #333;
-  margin: 0 10px;
-}
-footer a:hover {
-  color: #afe4de;
+.img-special {
+  width: 200px;
+  height: auto;
 }
 
-section {
-  color: #f8f9fa;
-  background-color: lightcoral;
+#ashtanga_img {
+  width: 200px;
+  height: auto;
 }
-section a {
-  background-color: lightcoral;
+
+#vinyasa_img {
+  width: 200px;
+  height: auto;
 }
-section div h2 ol {
-  background-color: lightcoral;
-}
-section div h2 ol li {
-  background-color: lightcoral;
-}
-section div h2 ol li a {
-  background-color: lightcoral;
+
+#yogasilla_img {
+  width: 200px;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
