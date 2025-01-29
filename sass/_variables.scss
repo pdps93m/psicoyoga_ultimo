@@ -1,51 +1,42 @@
-
-
 // Colores
-$primary-color:lightcoral;
+$background-color: #f8f9fa;
+$text-color: #333;
+$primary-color: lightcoral;
 $secondary-color: #afe4de;
 $tertiary-color: turquoise;
 $fourtiary-color: lightblue;
-$background-color: #f8f9fa;
-$text-color: #333;
 $border-color: #ddd; 
 
 // Tipografía
 $font-family-base: 'Helvetica Neue', Arial, sans-serif;
 $font-size-base: 16px;
+$line-height-base: 1.5;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
-$line-height-base: 1.5;
 
+// Tamaños de fuente para títulos
+$font-size-h1: 2.5rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.75rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1.25rem;
+$font-size-h6: 1rem;
 
-// Titulos
+// Mapa de fuentes para títulos
 $fuenteTitulos: (
-    h1: 2.5rem,
-    h2: 2rem,
-    h3: 1.75rem,
-    h4: 1.5rem,
-    h5: 1.25rem,
-    h6: 1rem,
+    h1: $font-size-h1,
+    h2: $font-size-h2,
+    h3: $font-size-h3,
+    h4: $font-size-h4,
+    h5: $font-size-h5,
+    h6: $font-size-h6,
 );
 
+// Colores de texto
 $color-textos: (
     primary: rgb(64, 224, 208),
     secondary: #777,
     tertiary: #aaa,
     success: #28a745,
     danger: #dc3545,
-    warning: #ffc107,
-    info: #17a2b8,
-    light: #f8f9fa,
-    dark: #343a40,
-    white: #fff,
-    black: #000,
 );
-
-
-    
-// Variables de diseño  
-// Breakpoints
-$breakpoint-small: 576px;
-$breakpoint-medium: 768px;
-$breakpoint-large: 992px;
-$breakpoint-xlarge: 1200px;

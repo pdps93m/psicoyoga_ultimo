@@ -84,41 +84,31 @@ header {
 section {
     padding: 20px;
     background-color: variables.$primary-color; // Fondo de color primario
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Centra el contenido horizontalmente
+    justify-content: center; // Centra el contenido verticalmente
 
     .contenedornegro {
         background-color: variables.$primary-color;
         color: variables.$text-color;
+        width: 100%; // Asegura que el contenedor ocupe todo el ancho disponible
 
         div {
             h2 {
                 margin-bottom: 20px;
+                text-align: center; // Centra el texto del título
             }
 
-            ol {
-                list-style: none;
-                padding: 0;
+            .modalidad {
                 display: flex;
-                flex-direction: column;
-                gap: 10px; // Espaciado entre los elementos
+                flex-wrap: wrap;
+                justify-content: space-around;
 
-                li {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 10px;
-                    border: 1px solid variables.$border-color;
-                    border-radius: 5px;
-                    background-color: variables.$background-color;
-
-                    a {
-                        text-decoration: none;
-                        color: variables.$secondary-color;
-                        margin-bottom: 10px;
-
-                        &:hover {
-                            color: variables.$tertiary-color;
-                        }
-                    }
+                .modalidad-item {
+                    flex: 1 1 200px;
+                    margin: 10px;
+                    text-align: center;
 
                     img {
                         max-width: 100%;
@@ -132,36 +122,23 @@ section {
     }
 
     .img-special {
+        width: 100%; // Asegura que el contenedor ocupe todo el ancho disponible
+
         div {
             h3 {
                 margin-bottom: 20px;
+                text-align: center; // Centra el texto del título
             }
 
-            ol {
-                list-style: none;
-                padding: 0;
+            .yoga-style {
                 display: flex;
-                flex-direction: column;
-                gap: 10px; // Espaciado entre los elementos
+                flex-wrap: wrap;
+                justify-content: space-around;
 
-                li {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 10px;
-                    border: 1px solid variables.$border-color;
-                    border-radius: 5px;
-                    background-color: variables.$background-color;
-
-                    a {
-                        text-decoration: none;
-                        color: variables.$secondary-color;
-                        margin-bottom: 10px;
-
-                        &:hover {
-                            color: variables.$tertiary-color;
-                        }
-                    }
+                a {
+                    flex: 1 1 200px;
+                    margin: 10px;
+                    text-align: center;
 
                     img {
                         max-width: 100%;
@@ -171,6 +148,22 @@ section {
                     }
                 }
             }
+        }
+    }
+}
+
+footer {
+    background-color: variables.$primary-color;
+    color: variables.$text-color;
+    text-align: center;
+    padding: 20px;
+
+    a {
+        color: variables.$text-color;
+        margin: 0 10px;
+
+        &:hover {
+            color: variables.$secondary-color;
         }
     }
 }
@@ -192,7 +185,33 @@ section {
     height: auto;
 }
 
+#yogasuave_img {
+    width: 200px;
+    height: auto;
+}
+
 #yogasilla_img {
     width: 200px;
     height: auto;
+}
+
+// Flexbox example
+.section-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+
+    .flex-item {
+        flex: 1 1 200px;
+        margin: 10px;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    }
 }

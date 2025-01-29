@@ -1,6 +1,368 @@
-.contenedorNegro {
+@charset "UTF-8";
+header {
   background-color: lightcoral;
-  color: white;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+header h1 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: lightcoral;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+footer a {
+  color: #333;
+  margin: 0 10px;
+}
+footer a:hover {
+  color: #afe4de;
+}
+
+.navBar nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.navBar nav ul li {
+  margin: 0 10px;
+}
+.navBar nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #f8f9fa;
+  border: 2px solid #afe4de;
+  border-radius: 5px;
+  background-color: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.navBar nav ul li a:hover {
+  background-color: turquoise;
+  color: #f8f9fa;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+}
+/* Estilos para pantallas medianas */
+/* Estilos para pantallas grandes */
+/* Estilos para pantallas extra grandes */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  header img {
+    width: 80px;
+    height: 80px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li {
+    margin: 10px 0;
+  }
+  section {
+    padding: 10px;
+  }
+  section div ol {
+    flex-direction: column;
+  }
+  section div ol li {
+    width: 100%;
+  }
+  footer {
+    padding: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 15px;
+  }
+  header img {
+    width: 90px;
+    height: 90px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  header nav ul {
+    flex-direction: row;
+  }
+  header nav ul li {
+    margin: 0 5px;
+  }
+  section {
+    padding: 15px;
+  }
+  section div ol {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  section div ol li {
+    width: 48%;
+    margin: 1%;
+  }
+  footer {
+    padding: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) and (min-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header nav ul {
+    flex-direction: row;
+  }
+  header nav ul li {
+    margin: 0 10px;
+  }
+  section {
+    padding: 20px;
+  }
+  section div ol {
+    flex-direction: row;
+  }
+  section div ol li {
+    margin: 0 10px;
+  }
+  section {
+    padding: 20px;
+  }
+  section div ol {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  section div ol li {
+    width: 30%;
+    margin: 1.5%;
+  }
+  footer {
+    padding: 20px;
+  }
+}
+#body_contacto {
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#header_principal {
+  background-color: lightcoral;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#header_principal img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+#header_principal h1 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+#section_nav nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+#section_nav nav ul li {
+  margin: 0 10px;
+}
+#section_nav nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #f8f9fa;
+  border: 2px solid #afe4de;
+  border-radius: 5px;
+  background-color: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+#section_nav nav ul li a:hover {
+  background-color: turquoise;
+  color: #f8f9fa;
+}
+
+#form_contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+#form_contacto label {
+  font-weight: 700;
+}
+#form_contacto input, #form_contacto textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+}
+#form_contacto button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: lightcoral;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+#form_contacto button:hover {
+  background-color: #afe4de;
+  color: #f8f9fa;
+}
+
+#footer {
+  background-color: lightcoral;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+#footer a {
+  color: #333;
+  margin: 0 10px;
+}
+#footer a:hover {
+  color: #afe4de;
+}
+
+#actividades {
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+#actividades header {
+  background-color: lightcoral;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#actividades header img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+#actividades header h1 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+#actividades nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+#actividades nav ul li {
+  margin: 0 10px;
+}
+#actividades nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #f8f9fa;
+  border: 2px solid #afe4de;
+  border-radius: 5px;
+  background-color: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+#actividades nav ul li a:hover {
+  background-color: turquoise;
+  color: #f8f9fa;
+}
+#actividades section {
+  padding: 20px;
+}
+#actividades section div ol {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#actividades section div ol li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+#actividades section div ol li a {
+  text-decoration: none;
+  color: #afe4de;
+  margin-bottom: 10px;
+}
+#actividades section div ol li a:hover {
+  color: turquoise;
+}
+#actividades section div ol li img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+#actividades footer {
+  background-color: lightcoral;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+#actividades footer a {
+  color: #333;
+  margin: 0 10px;
+}
+#actividades footer a:hover {
+  color: #afe4de;
 }
 
 body {
@@ -118,6 +480,172 @@ section div h2 ol li {
 }
 section div h2 ol li a {
   background-color: lightcoral;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  background-color: lightcoral;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+header h1 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+header nav ul li {
+  margin: 0 10px;
+}
+header nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #f8f9fa;
+  border: 2px solid #afe4de;
+  border-radius: 5px;
+  background-color: lightcoral;
+  transition: background-color 0.3s, color 0.3s;
+}
+header nav ul li a:hover {
+  background-color: turquoise;
+  color: #f8f9fa;
+}
+
+section {
+  padding: 20px;
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section .contenedornegro {
+  background-color: lightcoral;
+  color: #333;
+  width: 100%;
+}
+section .contenedornegro div h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+section .contenedornegro div .modalidad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section .contenedornegro div .modalidad .modalidad-item {
+  flex: 1 1 200px;
+  margin: 10px;
+  text-align: center;
+}
+section .contenedornegro div .modalidad .modalidad-item img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+section .img-special {
+  width: 100%;
+}
+section .img-special div h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+section .img-special div .yoga-style {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section .img-special div .yoga-style a {
+  flex: 1 1 200px;
+  margin: 10px;
+  text-align: center;
+}
+section .img-special div .yoga-style a img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: lightcoral;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+footer a {
+  color: #333;
+  margin: 0 10px;
+}
+footer a:hover {
+  color: #afe4de;
+}
+
+.img-special {
+  width: 200px;
+  height: auto;
+}
+
+#ashtanga_img {
+  width: 200px;
+  height: auto;
+}
+
+#vinyasa_img {
+  width: 200px;
+  height: auto;
+}
+
+#yogasuave_img {
+  width: 200px;
+  height: auto;
+}
+
+#yogasilla_img {
+  width: 200px;
+  height: auto;
+}
+
+.section-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+.section-flex .flex-item {
+  flex: 1 1 200px;
+  margin: 10px;
+  text-align: center;
+}
+.section-flex .flex-item img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
