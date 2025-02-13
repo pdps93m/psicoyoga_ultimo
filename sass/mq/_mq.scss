@@ -1,181 +1,223 @@
+@use '../variables';
+
+/* Estilos para pantallas pequeñas (425px de ancho) */
+
+@media (max-width: 425px) {
+    header {
+        padding: 10px;
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            ul {
+                flex-direction: column;
+                align-items: center;
+
+                li {
+                    margin: 5px 0;
+
+                    a {
+                        padding: 5px 10px;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .contenido_actividades {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .actividad {
+            width: 100%;
+            margin: 10px 0;
+            text-align: center;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            h6 {
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.5;
+                color: variables.$text-color;
+            }
+        }
+    }
+
+    footer {
+        padding: 10px;
+        text-align: center;
+
+        a {
+            display: block;
+            margin: 5px 0;
+        }
+
+        i {
+            margin: 0 5px;
+        }
+    }
+}
 /* Estilos para pantallas pequeñas */
 
 @media (max-width: 480px) {
-    .container {
-        flex-direction: column;
+    header {
+        padding: 10px;
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            ul {
+                flex-direction: column;
+                align-items: center;
+
+                li {
+                    margin: 5px 0;
+
+                    a {
+                        padding: 5px 10px;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
     }
-  }
-  
+}
   /* Estilos para pantallas medianas */
   @media (max-width: 768px) {
     
   }
 
   /* Estilos para pantallas grandes */
-  @media (max-width: 1024px) {
-    
-  }
-  
-  /* Estilos para pantallas extra grandes */
-  @media (max-width: 1200px) {
-    
-  }
-
-
-  // Media Queries para diseño responsivo
-// Dispositivos pequeños (teléfonos, menos de 768px)
-@media (max-width: 767px) {
-    body {
-        font-size: 14px;
-    }
-
+  @media (max-width: 768px) {
     header {
+        padding: 15px;
+
         img {
-            width: 80px;
-            height: 80px;
-        }
-
-        h1 {
-            font-size: 1.5rem;
-        }
-
-        nav {
-            ul {
-                flex-direction: column;
-
-                li {
-                    margin: 10px 0;
-                }
-            }
-        }
-    }
-
-    section {
-        padding: 10px;
-
-        div {
-            ol {
-                flex-direction: column;
-
-                li {
-                    width: 100%;
-                }
-            }
-        }
-    }
-
-    footer {
-        padding: 10px;
-    }
-}
-
-// Dispositivos medianos (tabletas, 768px a 991px)
-@media (min-width: 768px) and (max-width: 991px) {
-    body {
-        font-size: 15px;
-    }
-
-    header {
-        img {
-            width: 90px;
-            height: 90px;
+            width: 70px;
+            height: 70px;
+            margin-bottom: 15px;
         }
 
         h1 {
             font-size: 2rem;
+            margin-bottom: 15px;
         }
 
         nav {
             ul {
-                flex-direction: row;
+                flex-direction: column;
+                align-items: center;
 
                 li {
-                    margin: 0 5px;
+                    margin: 10px 0;
+
+                    a {
+                        padding: 8px 15px;
+                        font-size: 1rem;
+                    }
                 }
             }
         }
     }
-
-    section {
-        padding: 15px;
-
-        div {
-            ol {
-                flex-direction: row;
-                flex-wrap: wrap;
-
-                li {
-                    width: 48%;
-                    margin: 1%;
-                }
-            }
-        }
-    }
-
-    footer {
-        padding: 15px;
-    }
-
-    // Dispositivos grandes (escritorios, 992px y más)
-@media (min-width: 992px) {
-    body {
-        font-size: 16px;
-    }
-
+}
+  
+// Dispositivos grandes (laptops, menos de 1024px)
+@media (max-width: 1024px) {
     header {
+        padding: 20px;
+
         img {
             width: 100px;
             height: 100px;
+            margin-bottom: 20px;
         }
 
         h1 {
             font-size: 2.5rem;
+            margin-bottom: 20px;
         }
 
         nav {
             ul {
                 flex-direction: row;
+                justify-content: center;
 
                 li {
                     margin: 0 10px;
+
+                    a {
+                        padding: 10px 20px;
+                        font-size: 1.1rem;
+                    }
                 }
             }
         }
     }
+}
 
-    section {
-        padding: 20px;
 
-        div {
-            ol {
+  
+// Dispositivos extra grandes (monitores de escritorio, menos de 1200px)
+@media (max-width: 1200px) {
+    header {
+        padding: 25px;
+
+        img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 25px;
+        }
+
+        nav {
+            ul {
                 flex-direction: row;
+                justify-content: center;
 
                 li {
-                    margin: 0 10px;
+                    margin: 0 15px;
+
+                    a {
+                        padding: 12px 25px;
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }
     }
+}
 
-    section {
-        padding: 20px;
-
-        div {
-            ol {
-                flex-direction: row;
-                flex-wrap: wrap;
-
-                li {
-                    width: 30%;
-                    margin: 1.5%;
-                }
-            }
-        }
-    }
-
-    footer {
-        padding: 20px;
-    }
-}}
-
-// Media Queries para diseño responsivo
