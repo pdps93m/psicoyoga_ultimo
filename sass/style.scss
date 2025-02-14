@@ -170,20 +170,20 @@ footer {
 #vinyasa_img,
 #yogasuave_img,
 #yogasilla_img {
-    width: 200px; // Ajusta el tamaño según sea necesario
+    width: 200px; 
     height: auto;
-    border: none; // Eliminar el borde
+    border: none; 
     border-radius: 5px;
-    padding-right: 20px; // Ajusta el padding según sea necesario
+    padding-right: 20px; 
 }
 
 #principiantes_img,
 #avanzados_img {
-    width: 200px; // Ajusta el tamaño según sea necesario
+    width: 200px; 
     height: auto;
-    border: none; // Eliminar el borde
+    border: none; 
     border-radius: 5px;
-    padding-right: 20px; // Ajusta el padding según sea necesario
+    padding-right: 20px; 
 }
 
 // Flexbox para las imágenes index
@@ -191,7 +191,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /*padding: 20px;*/
+    
 
     .flex-item {
         flex: 1 1 200px;
@@ -255,14 +255,6 @@ footer {
     }
 }
 
-     /*{
-        width: 200px; // Ajusta el tamaño según sea necesario
-        height: auto;
-        border: none; // Eliminar el borde
-        border-radius: 5px;
-        padding-right: 20px;
-    } */
-
     // Estilos para la sección "¿Quiénes somos?" y "Sobre este espacio"
     .about-us, .about-space {
         padding: 20px;
@@ -286,7 +278,7 @@ footer {
         display: flex;
         align-items: center;
         margin-bottom: 20px;
-        background-color: variables.$primary-color; // Fondo con el color del sitio
+        background-color: variables.$primary-color; 
         padding: 20px;
         border-radius: 10px;
     
@@ -388,9 +380,9 @@ footer {
 
         img {
             width: 100%;
-            max-width: 300px; // Ajusta este valor según el tamaño deseado
+            max-width: 300px; 
             height: auto;
-            object-fit: cover; // Asegura que la imagen mantenga su proporción
+            object-fit: cover; 
             border-radius: 5px;
             margin-bottom: 10px;
         }
@@ -431,9 +423,9 @@ footer {
 
 
 body.horarios-aranceles-body {
-    background-color: variables.$primary-color; // Ajusta este valor según el color deseado
-    color: variables.$text-color; // Ajusta este valor según el color del texto deseado
-    font-family: variables.$font-family-base; // Ajusta este valor según la fuente deseada
+    background-color: variables.$primary-color; 
+    color: variables.$text-color; 
+    font-family: variables.$font-family-base; 
     margin: 0;
     padding: 0;
     line-height: variables.$line-height-base;
@@ -487,9 +479,9 @@ i {
 }
 
 body.retiros-body {
-    background-color: variables.$primary-color; // Ajusta este valor según el color deseado
-    color: variables.$text-color; // Ajusta este valor según el color del texto deseado
-    font-family: variables.$font-family-base; // Ajusta este valor según la fuente deseada
+    background-color: variables.$primary-color; 
+    color: variables.$text-color; 
+    font-family: variables.$font-family-base; 
     margin: 0;
     padding: 0;
     line-height: variables.$line-height-base;

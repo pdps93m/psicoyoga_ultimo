@@ -5,12 +5,12 @@
     header {
         display: flex;
         flex-direction: column;
-        align-items: center; // Centrar elementos
+        align-items: center; 
         padding: 10px;
-        font-size: 12px; // Aumentar el tamaño de la fuente
+        font-size: 12px; 
 
         img {
-            width: 30px; // Aumentar el tamaño de la imagen
+            width: 30px; 
             height: 30px;
             margin-bottom: 10px;
             display: block;
@@ -19,9 +19,9 @@
         }
 
         h1 {
-            font-size: 14px; // Aumentar el tamaño de la fuente
+            font-size: 14px; 
             margin-bottom: 10px;
-            text-align: center; // Centrar texto
+            text-align: center; 
         }
 
         
@@ -42,7 +42,7 @@
 
                     a {
                         padding: 5px 10px;
-                        font-size: 0.8rem; // Mantener el tamaño de la fuente
+                        font-size: 0.8rem; 
                         display: block;
                         width: 100%;
                         text-align: center;
@@ -58,13 +58,13 @@
     main.contenido {
         display: flex;
         flex-direction: column;
-        align-items: center; // Centrar elementos
+        align-items: center; 
         padding: 10px;
 
         .actividad {
             width: 100%;
             margin: 10px 0;
-            text-align: center; // Centrar texto
+            text-align: center; 
             background-color: transparent; // Eliminar el marco blanco
 
             img {
@@ -74,12 +74,12 @@
             }
 
             h6 {
-                font-size: 1rem; // Mantener el tamaño de la fuente
+                font-size: 1rem; 
                 margin-bottom: 10px;
             }
 
             p {
-                font-size: 0.875rem; // Aumentar el tamaño de la fuente a 14px
+                font-size: 0.875rem; 
                 line-height: 1.2;
                 color: variables.$text-color;
             }
@@ -89,26 +89,26 @@
     footer {
         display: flex;
         flex-direction: column;
-        align-items: center; // Centrar elementos
+        align-items: center; 
         padding: 10px;
-        text-align: center; // Centrar texto
+        text-align: center; 
 
         .container {
             display: flex;
             flex-direction: column;
-            align-items: center; // Centrar elementos
+            align-items: center; 
         }
 
         .row {
             width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center; // Centrar elementos
+            align-items: center; 
             margin-bottom: 10px;
 
             .col-md-4, .col-md-12 {
                 width: 100%;
-                text-align: center; // Centrar texto
+                text-align: center; 
                 margin-bottom: 10px;
             }
         }
@@ -128,8 +128,7 @@
     header {
         display: flex;
         flex-direction: column;
-        align-items: center; // Centrar elementos
-        padding: 15px;
+        align-items: center; 
         font-size: 12px;
 
         img {
@@ -142,13 +141,13 @@
         }
 
         h1 {
-            font-size: 16px; // Aumentar el tamaño de la fuente
+            font-size: 16px; 
             margin-bottom: 15px;
-            text-align: center; // Centrar texto
+            text-align: center; 
         }
 
         nav {
-            width: 100%; // Asegurar que el nav ocupe el 100% del ancho
+            width: 100%; 
             ul {
                 display: flex;
                 flex-direction: column;
@@ -158,12 +157,12 @@
                 list-style: none;
 
                 li {
-                    width: 100%; // Asegurar que los elementos de la lista ocupen el 100% del ancho
+                    width: 100%; 
                     margin: 7px 0;
 
                     a {
                         padding: 7px 12px;
-                        font-size: 0.9rem; // Mantener el tamaño de la fuente
+                        font-size: 0.9rem; 
                         display: block;
                         width: 100%;
                         text-align: center;
@@ -179,13 +178,13 @@
     main.contenido {
         display: flex;
         flex-direction: column;
-        align-items: center; // Centrar elementos
+        align-items: center; 
         padding: 15px;
 
         .actividad {
             width: 100%;
             margin: 15px 0;
-            text-align: center; // Centrar texto
+            text-align: center; 
 
             img {
                 max-width: 100%;
@@ -194,12 +193,12 @@
             }
 
             h6 {
-                font-size: 1.2rem; // Mantener el tamaño de la fuente
+                font-size: 1.2rem; 
                 margin-bottom: 15px;
             }
 
             p {
-                font-size: 1rem; // Aumentar el tamaño de la fuente a 16px
+                font-size: 1rem; 
                 line-height: 1.3;
                 color: variables.$text-color;
             }
@@ -209,26 +208,24 @@
     footer {
         display: flex;
         flex-direction: column;
-        align-items: center; // Centrar elementos
-        padding: 15px;
-        text-align: center; // Centrar texto
-
+        align-items: center; 
+        text-align: center; 
         .container {
             display: flex;
             flex-direction: column;
-            align-items: center; // Centrar elementos
+            align-items: center; 
         }
 
         .row {
             width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center; // Centrar elementos
+            align-items: center; 
             margin-bottom: 15px;
 
             .col-md-4, .col-md-12 {
                 width: 100%;
-                text-align: center; // Centrar texto
+                text-align: center; 
                 margin-bottom: 15px;
             }
         }
@@ -248,12 +245,11 @@
     header {
         display: flex;
         flex-direction: column;
-        align-items: center; // Centrar elementos
-        padding: 15px;
-        font-size: 14px; // Aumentar el tamaño de la fuente
+        align-items: center; 
+        font-size: 14px; 
 
         img {
-            width: 35px; // Aumentar el tamaño de la imagen
+            width: 35px; 
             height: 35px;
             margin-bottom: 15px;
             display: block;
@@ -262,13 +258,13 @@
         }
 
         h1 {
-            font-size: 18px; // Aumentar el tamaño de la fuente
+            font-size: 18px; 
             margin-bottom: 15px;
-            text-align: center; // Centrar texto
+            text-align: center; 
         }
 
         nav {
-            width: 100%; // Asegurar que el nav ocupe el 100% del ancho
+            width: 100%; 
             ul {
                 display: flex;
                 flex-direction: column;
@@ -278,12 +274,12 @@
                 list-style: none;
 
                 li {
-                    width: 100%; // Asegurar que los elementos de la lista ocupen el 100% del ancho
+                    width: 100%; 
                     margin: 7px 0;
 
                     a {
                         padding: 7px 12px;
-                        font-size: 1rem; // Aumentar el tamaño de la fuente
+                        font-size: 1rem; 
                         display: block;
                         width: 100%;
                         text-align: center;
@@ -299,13 +295,13 @@
     main.contenido {
         display: flex;
         flex-direction: column;
-        align-items: center; // Centrar elementos
+        align-items: center; 
         padding: 15px;
 
         .actividad {
             width: 100%;
             margin: 15px 0;
-            text-align: center; // Centrar texto
+            text-align: center; 
 
             img {
                 max-width: 100%;
@@ -314,12 +310,12 @@
             }
 
             h6 {
-                font-size: 1.2rem; // Mantener el tamaño de la fuente
+                font-size: 1.2rem; 
                 margin-bottom: 15px;
             }
 
             p {
-                font-size: 1.1rem; // Aumentar el tamaño de la fuente a 17.6px
+                font-size: 1.1rem; 
                 line-height: 1.3;
                 color: variables.$text-color;
             }
@@ -329,26 +325,26 @@
     footer {
         display: flex;
         flex-direction: column;
-        align-items: center; // Centrar elementos
+        align-items: center; 
         padding: 15px;
-        text-align: center; // Centrar texto
+        text-align: center; 
 
         .container {
             display: flex;
             flex-direction: column;
-            align-items: center; // Centrar elementos
+            align-items: center; 
         }
 
         .row {
             width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center; // Centrar elementos
+            align-items: center; 
             margin-bottom: 15px;
 
             .col-md-4, .col-md-12 {
                 width: 100%;
-                text-align: center; // Centrar texto
+                text-align: center; 
                 margin-bottom: 15px;
             }
         }
@@ -368,12 +364,12 @@
     header {
         display: flex;
         flex-direction: column;
-        align-items: center; // Centrar elementos
+        align-items: center; 
         padding: 20px;
-        font-size: 16px; // Aumentar el tamaño de la fuente
+        font-size: 16px; 
 
         img {
-            width: 40px; // Aumentar el tamaño de la imagen
+            width: 40px; 
             height: 40px;
             margin-bottom: 20px;
             display: block;
@@ -382,13 +378,13 @@
         }
 
         h1 {
-            font-size: 20px; // Aumentar el tamaño de la fuente
+            font-size: 20px; 
             margin-bottom: 20px;
-            text-align: center; // Centrar texto
+            text-align: center; 
         }
 
         nav {
-            width: 100%; // Asegurar que el nav ocupe el 100% del ancho
+            width: 100%; 
             ul {
                 display: flex;
                 flex-direction: column;
@@ -398,12 +394,12 @@
                 list-style: none;
 
                 li {
-                    width: 100%; // Asegurar que los elementos de la lista ocupen el 100% del ancho
+                    width: 100%; 
                     margin: 10px 0;
 
                     a {
                         padding: 10px 15px;
-                        font-size: 1rem; // Mantener el tamaño de la fuente
+                        font-size: 1rem; 
                         display: block;
                         width: 100%;
                         text-align: center;
@@ -422,7 +418,7 @@
             .actividad {
                 width: 100%;
                 margin: 20px 0;
-                text-align: center; // Centrar texto
+                text-align: center; 
 
                 img {
                     max-width: 100%;
@@ -431,12 +427,12 @@
                 }
 
                 h6 {
-                    font-size: 1.5rem; // Mantener el tamaño de la fuente
+                    font-size: 1.5rem; 
                     margin-bottom: 20px;
                 }
 
                 p {
-                    font-size: 1.1rem; // Aumentar el tamaño de la fuente a 17.6px
+                    font-size: 1.1rem; 
                     line-height: 1.3;
                     color: variables.$text-color;
                 }
@@ -447,26 +443,26 @@
     footer {
         display: flex;
         flex-direction: column;
-        align-items: center; // Centrar elementos
+        align-items: center; 
         padding: 20px;
-        text-align: center; // Centrar texto
+        text-align: center; 
 
         .container {
             display: flex;
             flex-direction: column;
-            align-items: center; // Centrar elementos
+            align-items: center; 
         }
 
         .row {
             width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center; // Centrar elementos
+            align-items: center; 
             margin-bottom: 20px;
 
             .col-md-4, .col-md-12 {
                 width: 100%;
-                text-align: center; // Centrar texto
+                text-align: center; 
                 margin-bottom: 20px;
             }
         }
@@ -481,12 +477,12 @@
         }
     }
 
-    // Centrar el h2 que dice "Elige cual modalidad es para vos"
+    // Centrado de el h2 que dice "Elige cual modalidad es para vos"
     .contenido_actividades h2 {
         text-align: center;
     }
 
-    // Centrar el h2 que dice "Estilos de yoga de la academia"
+    // Centrado de el h2 que dice "Estilos de yoga de la academia"
     .contenido_actividades h2 {
         text-align: center;
     }
@@ -494,13 +490,13 @@
 
 
 @media (min-width: 1024px) {
-    // Centrar el formulario de contacto
+    // Centrado de el formulario de contacto
     .contacto_body section form {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        max-width: 600px; // Ajusta el ancho máximo según sea necesario
+        max-width: 600px; 
 
         label {
             width: 100%;
@@ -535,23 +531,23 @@
 
 
 @media (min-width: 1024px) {
-    // Aumentar todo un 15% excepto las imágenes de "actividades" y las planillas de "horarios y aranceles"
+    
     body {
-        font-size: 18.4px; // 16px * 1.15
-        line-height: 1.725; // 1.5 * 1.15
+        font-size: 18.4px; 
+        line-height: 1.725; 
     }
 
     header {
-        padding: 23px; // 20px * 1.15
+        padding: 23px; 
         h1 {
-            font-size: 2.3rem; // 2rem * 1.15
+            font-size: 2.3rem; 
         }
         nav {
             ul {
                 li {
                     a {
-                        padding: 11.5px 23px; // 10px * 1.15 y 20px * 1.15
-                        font-size: 0.92rem; // 0.8rem * 1.15
+                        padding: 11.5px 23px; 
+                        font-size: 0.92rem; 
                     }
                 }
             }
@@ -563,35 +559,35 @@
 
         .contenido {
             .actividad {
-                margin: 23px 0; // 20px * 1.15
+                margin: 23px 0; 
                 h6 {
-                    font-size: 1.725rem; // 1.5rem * 1.15
+                    font-size: 1.725rem; 
                 }
                 p {
-                    font-size: 0.92rem; // 0.8rem * 1.15
-                    line-height: 1.38; // 1.2 * 1.15
+                    font-size: 0.92rem; 
+                    line-height: 1.38; 
                 }
             }
         }
     }
 
     footer {
-        padding: 23px; // 20px * 1.15
+        padding: 23px; 
         .row {
-            margin-bottom: 23px; // 20px * 1.15
+            margin-bottom: 23px; 
             .col-md-4, .col-md-12 {
-                margin-bottom: 23px; // 20px * 1.15
+                margin-bottom: 23px; 
             }
         }
         a {
-            margin: 11.5px 0; // 10px * 1.15
+            margin: 11.5px 0; 
         }
         i {
-            margin: 0 11.5px; // 10px * 1.15
+            margin: 0 11.5px; 
         }
     }
 
-    // Excluir las imágenes de "actividades" y las planillas de "horarios y aranceles"
+    // Aumento del tamaño del contenido menos de imágenes de "actividades" y las planillas de "horarios y aranceles"
     .contenido_actividades .actividad img,
     .planillas_horarios_aranceles img {
         width: auto;
@@ -605,12 +601,11 @@
     header {
         display: flex;
         flex-direction: column;
-        align-items: center; // Centrar elementos
-        padding: 23px; // Aumentar el padding
-        font-size: 18px; // Aumentar el tamaño de la fuente
-
+        align-items: center; 
+        padding: 23px; 
+        font-size: 18px; 
         img {
-            width: 350px; // Aumentar el tamaño de la imagen
+            width: 350px; 
             height: 350px;
             margin-bottom: 23px;
             display: block;
@@ -619,13 +614,13 @@
         }
 
         h1 {
-            font-size: 22px; // Aumentar el tamaño de la fuente
+            font-size: 22px; 
             margin-bottom: 23px;
-            text-align: center; // Centrar texto
+            text-align: center; 
         }
 
         nav {
-            width: 100%; // Asegurar que el nav ocupe el 100% del ancho
+            width: 100%; 
             ul {
                 display: flex;
                 flex-direction: column;
@@ -635,12 +630,12 @@
                 list-style: none;
 
                 li {
-                    width: 100%; // Asegurar que los elementos de la lista ocupen el 100% del ancho
+                    width: 100%; 
                     margin: 11.5px 0;
 
                     a {
                         padding: 11.5px 23px;
-                        font-size: 1.15rem; // Aumentar el tamaño de la fuente
+                        font-size: 1.15rem;
                         display: block;
                         width: 100%;
                         text-align: center;
@@ -659,7 +654,7 @@
             .actividad {
                 width: 100%;
                 margin: 23px 0;
-                text-align: center; // Centrar texto
+                text-align: center; 
 
                 img {
                     max-width: 100%;
@@ -668,12 +663,12 @@
                 }
 
                 h6 {
-                    font-size: 1.725rem; // Aumentar el tamaño de la fuente
+                    font-size: 1.725rem; 
                     margin-bottom: 23px;
                 }
 
                 p {
-                    font-size: 1.2rem; // Aumentar el tamaño de la fuente a 19.2px
+                    font-size: 1.2rem; 
                     line-height: 1.3;
                     color: variables.$text-color;
                 }
@@ -684,26 +679,26 @@
     footer {
         display: flex;
         flex-direction: column;
-        align-items: center; // Centrar elementos
+        align-items: center; 
         padding: 23px;
-        text-align: center; // Centrar texto
+        text-align: center; 
 
         .container {
             display: flex;
             flex-direction: column;
-            align-items: center; // Centrar elementos
+            align-items: center; 
         }
 
         .row {
             width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center; // Centrar elementos
+            align-items: center; 
             margin-bottom: 23px;
 
             .col-md-4, .col-md-12 {
                 width: 100%;
-                text-align: center; // Centrar texto
+                text-align: center; 
                 margin-bottom: 23px;
             }
         }
@@ -718,7 +713,7 @@
         }
     }
 
-    // Excluir las imágenes de "actividades" y las planillas de "horarios y aranceles"
+    //Aumento del contenido menos de las imágenes de "actividades" y las planillas de "horarios y aranceles"
     .contenido_actividades .actividad img,
     .planillas_horarios_aranceles img {
         width: auto;
