@@ -20,7 +20,7 @@
 @use './pages/quienes_somos.scss';
 
 // Media Queries
-@use './mq/mq.scss';
+@use './mq/_mq';
 
 body {
     background-color: variables.$background-color;
@@ -407,13 +407,15 @@ footer {
         border-radius: 10px;
         margin: 10px;
         padding: 20px;
-        width: calc(50% - 40px);
+        width: none;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         text-align: center;
 
         img {
-            max-width: 100%;
+            width: 100%;
+            max-width: 300px; // Ajusta este valor según el tamaño deseado
             height: auto;
+            object-fit: cover; // Asegura que la imagen mantenga su proporción
             border-radius: 5px;
             margin-bottom: 10px;
         }
@@ -449,6 +451,100 @@ footer {
 
     i {
         margin: 0 5px;
+    }
+}
+
+
+body.horarios-aranceles-body {
+    background-color: variables.$primary-color; // Ajusta este valor según el color deseado
+    color: variables.$text-color; // Ajusta este valor según el color del texto deseado
+    font-family: variables.$font-family-base; // Ajusta este valor según la fuente deseada
+    margin: 0;
+    padding: 0;
+    line-height: variables.$line-height-base;
+}
+
+i {
+    margin: 0 5px;
+}
+
+#tabla_horarios, #aranceles {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: variables.$primary-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    h2 {
+        font-size: map.get(variables.$fuenteTitulos, h2);
+        margin-bottom: 20px;
+        color: variables.$background-color;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+
+        th, td {
+            padding: 10px;
+            border: 1px solid variables.$primary-color;
+            font-size: variables.$font-size-base;
+            color: variables.$text-color;
+        }
+
+        th {
+            background-color: variables.$primary-color;
+            color: variables.$background-color;
+        }
+
+        td {
+            background-color: variables.$secondary-color;
+        }
+    }
+
+    p {
+        font-size: variables.$font-size-base;
+        color: variables.$text-color;
+    }
+}
+
+body.retiros-body {
+    background-color: variables.$primary-color; // Ajusta este valor según el color deseado
+    color: variables.$text-color; // Ajusta este valor según el color del texto deseado
+    font-family: variables.$font-family-base; // Ajusta este valor según la fuente deseada
+    margin: 0;
+    padding: 0;
+    line-height: variables.$line-height-base;
+}
+
+i {
+    margin: 0 5px;
+}
+
+.retiros {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: variables.$primary-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    h2 {
+        font-size: map.get(variables.$fuenteTitulos, h2);
+        margin-bottom: 20px;
+        color: variables.$text-color;
+    }
+
+    p {
+        font-size: variables.$font-size-base;
+        line-height: variables.$line-height-base;
+        color: variables.$text-color;
+        margin-bottom: 20px;
+        text-align: justify;
     }
 }
 
