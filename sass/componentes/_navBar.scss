@@ -1,29 +1,37 @@
 @use '../variables';
+.navBar {
+    nav {
+        margin-top: 20px; // Separar el nav del header
+        width: 100%; // Asegurar que el nav ocupe el 100% del ancho
 
-.navBar 
-   nav {
-    ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column; // Asegurar que los elementos estén en columna en resoluciones pequeñas
+            align-items: center;
+            margin: 0;
+            width: 100%; // Asegurar que el ul ocupe el 100% del ancho
 
-        li {
-            margin: 0 10px;
+            li {
+                width: 100%; // Asegurar que los elementos de la lista ocupen el 100% del ancho
+                margin: 5px 0;
 
-            a {
-                display: inline-block;
-                padding: 10px 20px;
-                text-decoration: none;
-                color: variables.$background-color;
-                border: 2px solid variables.$secondary-color;
-                border-radius: 5px;
-                background-color: none;
-                transition: background-color 0.3s, color 0.3s;
-
-                &:hover {
-                    background-color: variables.$tertiary-color;
+                a {
+                    display: block;
+                    padding: 10px 0px;
+                    text-decoration: none;
                     color: variables.$background-color;
+                    border: 2px solid variables.$secondary-color;
+                    border-radius: 5px;
+                    background-color: variables.$primary-color;
+                    transition: background-color 0.3s, color 0.3s;
+                    text-align: center; // Centrar el texto
+
+                    &:hover {
+                        background-color: variables.$tertiary-color;
+                        color: variables.$background-color;
+                    }
                 }
             }
         }
