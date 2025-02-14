@@ -61,6 +61,7 @@ header {
 
     nav {
         width: 100%;
+
         ul {
             display: flex;
             flex-direction: column;
@@ -72,11 +73,11 @@ header {
 
             li {
                 width: 100%;
-               
+
                 padding: 10px 0px;
 
                 a {
-                    
+
                     font-size: 0.8rem;
                     display: block;
                     width: 100%;
@@ -92,7 +93,7 @@ header {
 }
 
 main {
-    
+
 
     .contenido {
         display: flex;
@@ -145,7 +146,8 @@ footer {
         align-items: center;
         margin-bottom: 10px;
 
-        .col-md-4, .col-md-12 {
+        .col-md-4,
+        .col-md-12 {
             width: 100%;
             text-align: center;
             margin-bottom: 10px;
@@ -170,20 +172,20 @@ footer {
 #vinyasa_img,
 #yogasuave_img,
 #yogasilla_img {
-    width: 200px; 
+    width: 200px;
     height: auto;
-    border: none; 
+    border: none;
     border-radius: 5px;
-    padding-right: 20px; 
+    padding-right: 20px;
 }
 
 #principiantes_img,
 #avanzados_img {
-    width: 200px; 
+    width: 200px;
     height: auto;
-    border: none; 
+    border: none;
     border-radius: 5px;
-    padding-right: 20px; 
+    padding-right: 20px;
 }
 
 // Flexbox para las imágenes index
@@ -191,7 +193,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 
     .flex-item {
         flex: 1 1 200px;
@@ -241,6 +243,7 @@ footer {
 
         .description {
             flex: 1;
+
             h3 {
                 font-size: map.get(variables.$fuenteTitulos, h3);
                 margin-bottom: 10px;
@@ -255,65 +258,66 @@ footer {
     }
 }
 
-    // Estilos para la sección "¿Quiénes somos?" y "Sobre este espacio"
-    .about-us, .about-space {
-        padding: 20px;
-        background-color: variables.$primary-color;
-        color: variables.$text-color;
-        text-align: center;
-    
-        p {
-            font-size: variables.$font-size-base;
-            line-height: variables.$line-height-base;
-            margin-bottom: 10px;
-        }
+// Estilos para la sección "¿Quiénes somos?" y "Sobre este espacio"
+.about-us,
+.about-space {
+    padding: 20px;
+    background-color: variables.$primary-color;
+    color: variables.$text-color;
+    text-align: center;
+
+    p {
+        font-size: variables.$font-size-base;
+        line-height: variables.$line-height-base;
+        margin-bottom: 10px;
     }
-    
-    .team-list {
-        list-style: none;
-        padding: 0;
+}
+
+.team-list {
+    list-style: none;
+    padding: 0;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: variables.$primary-color;
+    padding: 20px;
+    border-radius: 10px;
+
+    img {
+        width: 150px;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 20px;
     }
-    
-    .team-member {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        background-color: variables.$primary-color; 
-        padding: 20px;
-        border-radius: 10px;
-    
-        img {
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-    
-        p {
-            flex: 1;
-            font-size: variables.$font-size-base;
-            line-height: variables.$line-height-base;
-            margin-bottom: 10px;
-        }
+
+    p {
+        flex: 1;
+        font-size: variables.$font-size-base;
+        line-height: variables.$line-height-base;
+        margin-bottom: 10px;
     }
-    
-    .space-details {
-        display: flex;
-        align-items: center;
-    
-        img {
-            width: 300px;
-            height: auto;
-            margin-right: 20px;
-        }
-    
-        p {
-            flex: 1;
-            font-size: variables.$font-size-base;
-            line-height: variables.$line-height-base;
-            margin-bottom: 10px;
-        }
+}
+
+.space-details {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 300px;
+        height: auto;
+        margin-right: 20px;
     }
+
+    p {
+        flex: 1;
+        font-size: variables.$font-size-base;
+        line-height: variables.$line-height-base;
+        margin-bottom: 10px;
+    }
+}
 
 .actividades_body {
     font-family: variables.$font-family-base;
@@ -354,8 +358,8 @@ footer {
                     transition: background-color 0.3s, color 0.3s;
 
                     &:hover {
-                        background-color: variables.$tertiary-color;
-                        color: variables.$background-color;
+                        background-color: variables.$primary-color; 
+                        border-color: variables.$primary-color;
                     }
                 }
             }
@@ -380,9 +384,9 @@ footer {
 
         img {
             width: 100%;
-            max-width: 300px; 
+            max-width: 300px;
             height: auto;
-            object-fit: cover; 
+            object-fit: cover;
             border-radius: 5px;
             margin-bottom: 10px;
         }
@@ -412,8 +416,8 @@ footer {
         text-decoration: none;
 
         &:hover {
-            color: variables.$secondary-color;
-        }
+            background-color: variables.$primary-color; // Color al pasar el mouse
+            border-color: variables.$primary-color;
     }
 
     i {
@@ -423,9 +427,9 @@ footer {
 
 
 body.horarios-aranceles-body {
-    background-color: variables.$primary-color; 
-    color: variables.$text-color; 
-    font-family: variables.$font-family-base; 
+    background-color: variables.$primary-color;
+    color: variables.$text-color;
+    font-family: variables.$font-family-base;
     margin: 0;
     padding: 0;
     line-height: variables.$line-height-base;
@@ -435,7 +439,8 @@ i {
     margin: 0 5px;
 }
 
-#tabla_horarios, #aranceles {
+#tabla_horarios,
+#aranceles {
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
@@ -455,7 +460,8 @@ i {
         border-collapse: collapse;
         margin-bottom: 20px;
 
-        th, td {
+        th,
+        td {
             padding: 10px;
             border: 1px solid variables.$primary-color;
             font-size: variables.$font-size-base;
@@ -478,44 +484,80 @@ i {
     }
 }
 
-body.retiros-body {
-    background-color: variables.$primary-color; 
-    color: variables.$text-color; 
-    font-family: variables.$font-family-base; 
-    margin: 0;
-    padding: 0;
-    line-height: variables.$line-height-base;
 }
-
-i {
-    margin: 0 5px;
-}
-
+// Estilos para las cards en la sección de retiros
 .retiros {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: variables.$primary-color;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    margin-bottom: 0; 
+    padding-bottom: 0; 
+}
 
-    h2 {
-        font-size: map.get(variables.$fuenteTitulos, h2);
-        margin-bottom: 20px;
-        color: variables.$text-color;
-    }
+.retiros-cards {
+    margin: 0; 
+    padding: 0; 
+    background-color: lightcoral;
+    display: flex;
+    justify-content: space-between; 
+    overflow: hidden; 
 
-    p {
-        font-size: variables.$font-size-base;
-        line-height: variables.$line-height-base;
-        color: variables.$text-color;
-        margin-bottom: 20px;
-        text-align: justify;
+    .card {
+        flex: 1; 
+        margin: 0 10px; 
+        border: 1px solid variables.$secondary-color;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        &:first-child {
+            margin-left: 0; 
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .card-img-top {
+            border-radius: 5px 5px 0 0;
+        }
+
+        .card-body {
+            text-align: center;
+            background-color: variables.$background-color;
+            color: variables.$text-color;
+
+            .card-title {
+                font-size: 1.25rem;
+                margin-bottom: 10px;
+                font-family: 'Georgia', serif;
+            }
+
+            .card-text {
+                font-size: 1rem;
+                margin-bottom: 15px;
+                font-family: Arial, sans-serif;
+            }
+
+            .btn-primary {
+                background-color: variables.$primary-color;
+                border-color: variables.$primary-color;
+
+                &:hover {
+                    background-color: variables.$primary-color;
+                    border-color: variables.$primary-color;
+                }
+            }
+        }
     }
 }
 
+// Sobrescritura de las clases de utilidad de Bootstrap
+.mb-5, .my-5 {
+    margin-bottom: 0 !important; 
+}
 
+.mt-5, .my-5 {
+    margin-top: 0 !important; 
+}
 
-
-    /* sourceMappingURL=style.css.map */
+footer {
+    margin-top: 0; 
+    padding-top: 0; 
+}
